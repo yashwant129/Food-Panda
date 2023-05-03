@@ -1,0 +1,101 @@
+<section class="h-100 gradient-form" style="background-color: #eee; " >
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                    <div class="na">
+                  <h4 class="mt-1 mb-5 pb-1">FooodPanda🐼</h4>
+                    </div>
+                </div>
+
+<div class="col-md-12">
+  <div class="card card-container">
+    <form 
+      *ngIf="!isLoggedIn"
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+    >
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          name="username"
+          [(ngModel)]="form.username"
+          required
+          #username="ngModel"
+        />
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="username.errors && f.submitted"
+        >
+          Username is required!
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          [(ngModel)]="form.password"
+          required
+          minlength="6"
+          #password="ngModel"
+        />
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="password.errors && f.submitted"
+        >
+          <div *ngIf="password.errors['required']">Password is required</div>
+          <div *ngIf="password.errors['minlength']">
+            Password must be at least 6 characters
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary btn-block">
+          Login
+        </button>
+      </div>
+      <div class="form-group">
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="f.submitted && isLoginFailed"
+        >
+          Login failed: {{ errorMessage }}
+        </div>
+      </div>
+    </form>
+    <div class="alert alert-success" *ngIf="isLoggedIn">
+      Logged in as {{ roles }}.
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+<div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+  <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+    <h4 class="about1"><div><b class="about2">DELIGHT:</b></div><br>
+      If you are someone whose taste buds long to savor the unusual, then Our Restaurant is for you. Whether it is Tamil Nadu’s renowned Chicken Chettinad or West Bengal’s curiously named Vegetarian Mutton, we have everything. We serve the explosion of delicious flavors on your plate. Explore your tonight’s culinary delight at Our Restaurant.</h4>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>

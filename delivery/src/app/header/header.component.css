@@ -1,0 +1,37 @@
+/* Newly Added */
+header
+{
+    background-color: #fc8019;
+    padding: 0;
+    border-bottom: 1px solid white;
+}
+a
+{
+  color: white;
+}
+a:hover
+{
+    background-color: white;
+    color: #fc8019;
+}
+.container
+{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+a.logo
+{
+    font-weight: bold;
+    padding: 1em;
+}
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+}
+nav ul li a
+{
+    padding: 1.2em;
+    display: inline-block;
+}

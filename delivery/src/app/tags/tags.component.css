@@ -1,0 +1,17 @@
+/*Newly Added*/
+div
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div a
+{
+  background-color: #f98500cc;
+  padding: .5rem 1rem;
+  margin: .2rem .15rem ;
+  border-radius: 10rem;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}

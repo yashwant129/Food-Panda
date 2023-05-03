@@ -1,0 +1,32 @@
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #ee7724;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #fab787 , #ee7724);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #fd7a1d , #ee7724)
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #ee7724;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #ee7724);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #ee7724)
+    }
+    
+    .la{
+        color: #ee7724;
+    }
+    
+    .la1{
+        background-color: #ee7724;
+        color: white;
+        
+    }
+    
+    
